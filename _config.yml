@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            walter
 tagline:          'A blog by the same name'
-description:      ''
+description:      'A web developer living in Austin, Texas'
 url:              http://walteranderson.me
 baseurl:          /
 
@@ -20,7 +20,13 @@ author:
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+
+twitter:
+  profile:        https://twitter.com/walteranderson
+
+linkedin:
+  profile:        https://linkedin.com/in/walteranderson19
 
 github:
+  profile:        https://github.com/walteranderson
   repo:           https://github.com/walteranderson/walteranderson.github.io
