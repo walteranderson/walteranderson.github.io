@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About
+layout: post
+title: Hey There
 ---
 
 My name is Walter Anderson and I'm a web developer living in Austin, Texas. This blog will eventually contain things that I have written about in a multitude of topics including:

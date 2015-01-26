@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            walter
-tagline:          'A blog by the same name'
-description:      'A web developer living in Austin, Texas'
+tagline:          'My life, in blog form'
+description:      'My life, in blog form'
 url:              http://walteranderson.me
 baseurl:          /
 
