@@ -104,8 +104,23 @@ var module = (function() {
 I feel like this is a much more readable pattern for those that are unfamiliar with the code, and
 you're not concerned with changing the module's API.
 
+
 ## Application Structure
-- very ad-hoc, which is fine for developing but not for other people debugging my code
+
+The file structure I chose is pretty ad-hoc, which is fine for developing. I did most of the coding in
+one weekend, after all. But that can make things a little confusing for people new to the code.
+Since I'm just using jQuery, I think a reasonable separation would be 1) DOM events and 2) business logic.
+Business logic, in this case, is just interacting with the Trello API, localStorage, and some data transformation.
+
+Right now there is a file for each page (the popup and the settings page). Inside each file, there's a
+mish-mash of bootstrapping for each page, some helper functions specific to that page, and the DOM events.
+Those should really only contain the events that react to DOM changes and call any bootstrapping functions
+that are implemented elsewhere.
+
+Also, each module that I've defined would really be better in a separate file. Right now they're just
+appended to the end of the functions.js file. This was only for convenience, since that file was already
+created and I was too lazy to add the import statement to each html page. It would go a long way in
+clearing up the code to put those in their own files though.
 
 ## Functional Programming
 http://spf13.com/presentation/7-common-mistakes-in-go-2015/
